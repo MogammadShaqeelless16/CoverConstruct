@@ -9,6 +9,10 @@
   position: relative; /* Ensure relative positioning for children to be positioned properly */
 }
 
+body{
+  margin: 0;
+}
+
 .theme-switcher {
   position: absolute;
   top: 20px;
@@ -38,7 +42,6 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .page-display {

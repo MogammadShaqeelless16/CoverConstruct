@@ -35,11 +35,12 @@ input[type="text"] {
   width: 100%;
   padding: 8px;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   border-radius: 3px;
   background-color: inherit;
   color: inherit;
 }
+
 
 .buttons {
   display: flex;
