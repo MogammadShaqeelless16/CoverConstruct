@@ -1,0 +1,32 @@
+.page-display {
+    width: 80%; /* A4 width */
+    height: 80%; /* A4 height */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page-display h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cover-letter-content {
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  .signature {
+    text-align: right;
+    width: 100%;
+  }
+  
+  .signature p {
+    margin: 5px 0;
+  }
+  

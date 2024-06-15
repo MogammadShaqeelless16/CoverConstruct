@@ -1,0 +1,55 @@
+.cover-letter {
+    width: 210mm; /* A4 width */
+    min-height: 297mm; /* A4 height */
+    padding: 20mm;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark .cover-letter {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .cover-letter h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style 1 */
+  .style1 {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .style1 h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Style 2 */
+  .style2 {
+    font-family: Arial, sans-serif;
+    border-left: 10px solid #007bff;
+    padding-left: 20px;
+  }
+  
+  .style2 h2 {
+    color: #007bff;
+  }
+  
+  /* Style 3 */
+  .style3 {
+    font-family: Georgia, serif;
+    border-top: 5px solid #28a745;
+    border-bottom: 5px solid #28a745;
+  }
+  
+  .style3 h2 {
+    color: #28a745;
+    font-style: italic;
+  }
+  

@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.theme-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.theme-switcher:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.theme-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-display {
+  width: 210mm; /* A4 width */
+  height: 297mm; /* A4 height */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-display h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cover-letter-content {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.signature {
+  text-align: right;
+  width: 100%;
+}
+
+.signature p {
+  margin: 5px 0;
 }
