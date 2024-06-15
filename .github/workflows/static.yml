@@ -1,0 +1,27 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # Deploy on push to master branch
+  workflow_dispatch:  # Allow manual trigger from Actions tab
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2  # Checkout the repository to the runner
+    
+      - name: Install dependencies
+        run: |
+          npm install  # Install dependencies using npm
+          npm run build  # Build your React project
+      
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4  # Use a GitHub Pages deploy action
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}  # GitHub token with repo scope stored in secrets
+          BRANCH: gh-pages  # Branch to deploy to
+          FOLDER: build  # Folder containing the built React project
+          CLEAN: true  # Clean the existing branch before deployment
