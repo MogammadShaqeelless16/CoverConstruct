@@ -12,12 +12,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2  # Checkout the repository to the runner
-    
-      - name: Install dependencies
+      
+      - name: Install dependencies and build
         run: |
           npm install  # Install dependencies using npm
           npm run build  # Build your React project
-      
+        
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4  # Use a GitHub Pages deploy action
         with:
