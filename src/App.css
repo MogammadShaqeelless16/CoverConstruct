@@ -1,10 +1,12 @@
+/* App.css */
+
 .app {
   display: flex;
   height: 100vh;
   font-family: Arial, sans-serif;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: relative; /* Ensure relative positioning for children to be positioned properly */
 }
 
 .theme-switcher {
@@ -26,46 +28,37 @@
 .theme-icon {
   width: 24px;
   height: 24px;
+  /* Additional styling for icon like margin or color */
 }
 
-.sidebar {
-  flex: 0 0 300px;
-}
 
 .content {
-  flex: 1;
+  width: 70%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .page-display {
-  width: 210mm; /* A4 width */
-  height: 297mm; /* A4 height */
-  background-color: white;
+  background-color: inherit;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  overflow: auto;
+  position: relative;
 }
 
-.page-display h1 {
-  text-align: center;
-  margin-bottom: 20px;
+.page-display p {
+  margin: 0 0 10px;
+  line-height: 1.5;
 }
 
-.cover-letter-content {
-  width: 100%;
-  flex-grow: 1;
+.page-display.editable p:hover {
+  background-color: #f0f0f0;
+  cursor: text;
 }
 
-.signature {
-  text-align: right;
-  width: 100%;
-}
-
-.signature p {
-  margin: 5px 0;
+.page-display.editable p:focus {
+  outline: none;
+  background-color: #e0e0e0;
 }
