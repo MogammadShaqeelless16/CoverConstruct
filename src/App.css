@@ -18,15 +18,11 @@ body{
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: inherit;
   padding: 10px;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
-}
-
-.theme-switcher:hover {
-  background-color: rgba(255, 255, 255, 1);
 }
 
 .theme-icon {
