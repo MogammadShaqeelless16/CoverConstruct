@@ -2,6 +2,8 @@
 
 Coverconstruct is a web application that allows users to generate and customize cover letters using predefined templates. It includes features for dynamically generating cover letters based on user inputs and provides options to download the generated content as a PDF.
 
+![image](https://github.com/MogammadShaqeelless16/CoverConstruct/assets/54390756/95430c08-73dc-4b01-a068-f5869ae8b315)
+
 ## Features
 
 - Generate cover letters based on templates.
